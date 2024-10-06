@@ -1,0 +1,105 @@
+{
+    "header": {
+        "INICIO": "HOME",
+        "SOBRE MI": "ABOUT ME",
+        "HABILIDADES": "SKILLS",
+        "PORTAFOLIO": "PORTFOLIO",
+        "CURRICULUM": "CURRICULUM",
+        "TECNOLOGÍAS": "TECHNOLOGIES",
+        "CONTACTO": "CONTACT"
+    },
+
+    "home": {
+        "Ingeniero de Software": "Software Engineer",
+        "FullStack": "Data Analyst"
+    },
+
+    "About me": {
+        "Sobre Mi": "About Me",
+        "Descripcion-Sobre-Mi": "<span>Hello, I am Luis Miguel Pineda.</span> I am a responsible, proactive person with leadership skills. I have a quick learning ability and experience in document writing and program management, especially in Excel.",
+        "Datos Personales": "Personal Information",
+        "Cumpleaños": "<strong>Birthday</strong> March 23, 1998",
+        "Telefono": "Phone",
+        "Pronto": "<strong>Webside</strong>Soon",
+        "Direccion": "Address",
+        "Cargo":"<strong>Role</strong><span>Data Analys</span>",
+        "Analista De Datos": "Data Analyst",
+        "Intereses": "Hobbies",
+        "Guitarra": "GUITAR",
+        "Musica": "MUSIC",
+        "Equitación": "<span>RIDE HORSE</span>",
+        "Juegos": "GAMES",
+        "Viajes": "TRAVEL",
+        "Libros": "READING",
+        "Autos": "DRIVING",
+        "Fotos": "PHOTOS",
+        "descargar CV": "Download CV"
+    },
+
+    "Skills": {
+        "Habilidad":"Skills",
+        "Habilidades-Técnicas": "Technical Skills",
+        "Habilidad-Profesional": "Professional Skills",
+        "Comunicación": "communication",
+        "Trabajo-en-Equipo": "Teamwork",
+        "Creatividad": "Creativity",
+        "Dedicación": "Dedication"
+    },
+
+    "Portfolio": {
+        "Portafolio": "Portfolio",
+        "Excel-Avanzado": "Advanced Excel",
+        "Reporte-de-Calidad": "Quality Report",
+        "Análisis-de-Datos": "Data Analytics",
+        "Encuesta-de-Calidad": "Quality Survey"
+    },
+
+    "Curriculum": {
+        "Curriculum":"Resume",
+        "Educación": "Education",
+        "Laboral": "Work Experience",
+        "Bachillerato": "High School",
+        "Colegio-Interamericano": "Interamericano School",
+        "Bachillerato-Descripcion":"I completed my high school education with a focus on Business Management, acquiring skills in leadership and communication. This period sparked my interest in Project Management.",
+        "Ingenieria-Industrial": "Industrial Engineering",
+        "Unitec": "Unitec University Corporation",
+        "Industrial-descripcion":"Graduated in Industrial Engineering with knowledge in process optimization, quality management, and continuous improvement. I developed skills in data analysis and strategic planning, applied to operational efficiency.",
+        "Excel-titulo":"Advanced Excel & Excel VBA",
+        "Excel-Descripcion": "Skills in task automation, data analysis, and creating macros to optimize processes and improve operational efficiency",
+        "Practicante-de-Calidad": "Quality Intern",
+        "Management-Descripcion": "Experience in project planning, execution, and follow-up. Skilled in managing resources, meeting deadlines, and optimizing team productivity.",
+        "Inspector-AQL": "AQL Inspection",
+        "AQL-Descripcion": "Ensuring product quality through sampling and evaluation, guaranteeing compliance with standards and regulations.",
+        "Experiencia-de-trabajo":"Work Experience",
+        "Grupo-Repremundo": "Repremundo Group",
+        "Fecha-Trabajo1": "August 01, 2017 - January 31, 2018",
+        "Descripcion-Repre": "I supported the implementation and maintenance of quality management systems, ensuring compliance with industrial standards and regulations, as part of my professional internship.",
+        "Asistente-de-Calidad": "Quality Assistant",
+        "Fecha-Trabajo2": "June 01, 2018 - July 02, 2019",
+        "Descripcion-Tipiel": "Quality assistant at a petroleum engineering company, supporting the implementation of quality management systems, process supervision, and audit report preparation. I collaborated in continuous improvement and staff training on quality practices.",
+        "Receiving": "Receiving Coordinator",
+        "Fecha-Trabajo3": "August 01, 2021 - August 02, 2022",
+        "Inspector-QC":"QC Inspector",
+        "Descripcion-Capacity": "Responsible for receiving and verifying goods, inventory management, and quality control. Coordinated with suppliers and warehouse staff to ensure efficient product flow. Experienced in inventory management systems and preparing receiving reports.",
+        "QC Inspector": "QC Inspector",
+        "Fecha-Trabajo4": "September 01, 2023 - Present",
+        "Descripcion-Cosmax": "In my current role, I create and maintain quality records, manage non-conformance reports, and propose corrective actions to ensure regulatory compliance and improve processes."
+    },
+
+    "Technologies":{
+        "Tecnologias":"Technologies",   
+        "Desarrollo":"DEVELOPMENT",
+        "Excel":"Advanced Excel"
+    },
+
+    "Contact": {
+        "Contacto": "CONTACT",
+        "Tu-nombre": "<input type=|\"text\" placeholder=\"Your Name\">",
+        "Telefono": "<input type=\"text\" placeholder=\"Number Phone\">",
+        "Dirección-de-correo": "<input type=\"text\" placeholder=\"Email\">",
+        "Tema": "<input type=\"text\" placeholder=\"Subject\">",
+        "Mensaje": "<textarea name=\"\" id=\"\" cols=\"30\" rows=\"10\" placeholder=\"Message\"></textarea>",
+        "Enviar-Mensaje": "Send Message",
+        "Llamanos": "Call Us +1 (954) 860-9233"
+    }
+}

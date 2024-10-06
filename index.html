@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--HEADER MENU IN SPANISH-->
+    <div class="header-container">
+        <header>
+            <div class="logo">
+                <a href="#">Luis Miguel</a>
+            </div>
+            <div class="language">
+                <div id="flags" class="flags">
+                    <input type="checkbox" id="btn-switch">
+                    <label for="btn-switch" class="lbl-switch">
+                        <div id="language-button" class="language-button">
+                            <div class="flags_items" data-language="en"></div>
+                        </div>
+                    </label>
+                </div>
+            </div> 
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" data-section="header" data-value="INICIO"  onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi "data-section="header" data-value="SOBRE MI" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" data-section="header" data-value="HABILIDADES"onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#portafolio" data-section="header" data-value="PORTAFOLIO"onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#curriculum" data-section="header" data-value="CURRICULUM"onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#tecnologias"  data-section="header" data-value="TECNOLOGÍAS"onclick="seleccionar()">TECNOLOGIAS</a></li>
+                    <li><a href="#contacto" data-section="header" data-value="CONTACTO"onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--HEADER SECTION-->
+    <section id="inicio" class="inicio">
+        <div class="banner-content">
+            <div class="img-container">
+                <img class="perfil_img" src="img/luismiguel.jpeg" alt="">
+            </div>
+            <h1>LUIS MIGUEL PINEDA</h1>
+            <h2 data-section="home" data-value="Ingeniero de Software">Ingeniero de Software</h2>
+            <h3 data-section="home" data-value="FullStack">Analista de Datos</h3>
+            <div class="redes">
+                <a href="https://github.com/MrTesla23" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/luis-dev-892a61330/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+            </div>
+        </div>
+    </section> 
+
+    <!--ABOUT ME SECTION-->
+    <section id="sobremi" class="sobremi">
+        <div class="section-container">
+            <h2 data-section="About me" data-value="Sobre Mi">Sobre Mí</h2>
+            <p data-section="About me" data-value="Descripcion-Sobre-Mi"><span>Hola, Soy Luis Miguel Pineda.</span>
+                Soy una persona responsable, proactiva y con habilidades de liderazgo. Tengo facilidad para aprender rápido y experiencia en la redacción de documentos y manejo de programas, especialmente en Excel.</p>
+
+            <div class="fila">
+                <!--PERSONAL INFORMATION-->
+                <div class="col">
+                    <h3 data-section="About me" data-value="Datos Personales">Datos Personales</h3>
+                    <ul>
+                        <li data-section="About me" data-value="Cumpleaños">
+                            <strong>Cumpleaños</strong>
+                            Marzo 23, 1998
+                        </li>
+                        <li>
+                            <strong data-section="About me" data-value="Telefono">Teléfono</strong>
+                            +1 (954) 860-9233
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            luismiguel.pinedadev@gmail.com
+                        </li>
+                        <!-- <li data-section="About me" data-value="Pronto">
+                            <strong>Webside</strong>
+                            Pronto
+                        </li>-->
+                        <li>
+                            <strong data-section="About me" data-value="Direccion">Direccion</strong>
+                            Metuchen, New Jersey
+                        </li>
+                        <li data-section="About me" data-value="Cargo">
+                            <strong >Cargo</strong>
+                            <span>Analista de Datos</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--HOBBIES-->
+                <div class="col">
+                    <h3 data-section="About me" data-value="Intereses">Intereses</h3>
+                    <div class="hobbies-container">
+                        <div class="hobbie">
+                            <i class="fa-solid fa-guitar"></i>
+                            <span data-section="About me" data-value="Guitarra">GUITARRA</span> 
+                        </div>
+                        <div class="hobbie">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span data-section="About me" data-value="Musica">MUSICA</span> 
+                        </div>
+                        <div class="hobbie">
+                            <i class="fa-solid fa-horse"></i>
+                            <span data-section="About me" data-value="Equitación">EQUITACIÓN</span> 
+                        </div>
+                        <div class="hobbie">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span data-section="About me" data-value="Juegos">JUEGOS</span> 
+                        </div>
+                        <div class="hobbie">
+                            <i class="fa-solid fa-plane"></i>
+                            <span data-section="About me" data-value="Viajes">VIAJES</span> 
+                        </div>
+                        <div class="hobbie">
+                            <i class="fa-solid fa-book"></i>
+                            <span data-section="About me" data-value="Libros">LIBROS</span> 
+                        </div>
+                        <div class="hobbie">
+                            <i class="fa-solid fa-car"></i>
+                            <span data-section="About me" data-value="Autos">AUTOS</span>
+                        </div>
+                        <div class="hobbie">
+                            <i class="fa-solid fa-camera"></i>
+                            <span data-section="About me" data-value="Fotos">FOTOS</span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="/files/Luis Miguel Resume.pdf" download="Luis Resumen">
+            <button>
+                <span data-section="About me" data-value="descargar CV">
+                    descargar CV</span> 
+                    <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </a> </div>
+    </section>
+
+    <!--SKILLS SECTION-->
+    <section id="skills" class="skills">
+        <div class="section-container">
+            <h2 data-section="Skills" data-value="Habilidad">Habilidades</h2>
+            <div class="fila">
+                <!--Technical Skills-->
+                <div class="col">
+                    <h3 data-section="Skills" data-value="Habilidades-Técnicas">Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="banner-skill">
+                            <div class="progress javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="banner-skill">
+                            <div class="progress htmlcss">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Excel Advanced & Excel VBA</span>
+                        <div class="banner-skill">
+                            <div class="progress exceladvancedandvba">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Microsoft Office</span>
+                        <div class="banner-skill">
+                            <div class="progress microsoftoffice">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Profesional Skills-->
+                    <div class="col">
+                        <h3 data-section="Skills" data-value="Habilidad-Profesional">Habilidad Profesional</h3>
+                        <div class="skill">
+                            <span data-section="Skills" data-value="Comunicación">Comunicación</span>
+                            <div class="banner-skill">
+                                <div class="progress comunication">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span data-section="Skills" data-value="Trabajo-en-Equipo">Trabajo en Equipo</span>
+                            <div class="banner-skill">
+                                <div class="progress teamwork">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span data-section="Skills" data-value="Creatividad">Creatividad</span>
+                            <div class="banner-skill">
+                                <div class="progress creavity">
+                                    <span>99%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span data-section="Skills" data-value="Dedicación">Dedicacion</span>
+                            <div class="banner-skill">
+                                <div class="progress dedication">
+                                    <span>65%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Project Management</span>
+                            <div class="banner-skill">
+                                <div class="progress projectmanagement">
+                                    <span>94%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--PORTFOLIO SECTION-->
+    <section id="portafolio" class="portafolio">
+        <div class="section-container">
+            <h2 data-section="Portfolio" data-value="Portafolio">Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="Proyecto de videojuego Mokepon con HTML, CSS y JavaScript">
+                    <div class="overlay">
+                        <h3>Dashboard</h3>
+                        <p data-section="Portfolio" data-value="Excel-Avanzado">Excel Avanzado</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="Proyecto de videojuego Mokepon con HTML, CSS y JavaScript">
+                    <div class="overlay">
+                        <h3>Mokepon</h3>
+                        <p>HTML, CSS & JavaScript</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="Reporte de calidad usando análisis de datos">
+                    <div class="overlay">
+                        <h3 data-section="Portfolio" data-value="Reporte-de-Calidad">Reporte de Calidad</h3>
+                        <p data-section="Portfolio" data-value="Análisis-de-Datos">Análisis de Datos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="Reporte de calidad usando análisis de datos">
+                    <div class="overlay">
+                        <h3 data-section="Portfolio" data-value="Encuesta-de-Calidad">Encuesta de Calidad</h3>
+                        <p data-section="Portfolio" data-value="Análisis-de-Datos">Análisis de Datos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--CURRICULUM SECTION-->
+    <section id="curriculum" class="curriculum">
+        <div class="section-container">
+            <h2 data-section="Curriculum" data-value="Curriculum">Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3 data-section="Curriculum" data-value="Educación">Educación</h3>
+                    <div class="item izq">
+                        <h4 data-section="Curriculum" data-value="Bachillerato">Bachillerato</h4>
+                        <span class="casa" data-section="Curriculum" data-value="Colegio-Interamericano">Colegio Interamericano</span>
+                        <span class="fecha">2003 - 2014</span>
+                        <p data-section="Curriculum" data-value="Bachillerato-Descripcion">Completé mi bachillerato con enfoque en Gestión Empresarial, adquiriendo habilidades en liderazgo y comunicación. Este periodo despertó mi interés en la Dirección de Proyectos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4 data-section="Curriculum" data-value="Ingenieria-Industrial">Ingenieria Industrial</h4>
+                        <span class="casa" data-section="Curriculum" data-value="Unitec">Corporación Universitaria Unitec</span>
+                        <span class="fecha">2015 - 2019</span>
+                        <p data-section="Curriculum" data-value="Industrial-descripcion">Graduado en Ingeniería Industrial con conocimientos en optimización de procesos, gestión de calidad y mejora continua. Desarrollé habilidades en análisis de datos y planificación estratégica, aplicadas a la eficiencia operativa.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4 data-section="Curriculum" data-value="Excel-titulo">Advanced Excel & Excel VBA</h4>
+                        <span class="casa" data-section="Curriculum" data-value="Unitec">Corporación Universitaria Unitec</span>
+                        <span class="fecha" >2015 - 2019</span>
+                        <p data-section="Curriculum" data-value="Excel-Descripcion">Habilidades en automatización de tareas, análisis de datos y creación de macros para optimizar procesos y mejorar la eficiencia operativa</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Project Management</h4>
+                        <span class="casa" data-section="Curriculum" data-value="Unitec">Corporación Universitaria Unitec</span>
+                        <span class="fecha">2019</span>
+                        <p data-section="Curriculum" data-value="Management-Descripcion"> Experiencia en la planificación, ejecución y seguimiento de proyectos. Habilidad para gestionar recursos, cumplir plazos y optimizar la productividad del equipo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4 data-section="Curriculum" data-value="Inspector-AQL">Inspector AQL</h4>
+                        <span class="casa">Cosmax SOP Training</span>
+                        <span class="fecha">2024</span>
+                        <p data-section="Curriculum" data-value="AQL-Descripcion">Asegurando la calidad de productos mediante muestreo y evaluación, garantizando el cumplimiento de estándares y normativas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3 data-section="Curriculum" data-value="Laboral">Experiencia de Trabajo</h3>
+                    <div class="item der">
+                        <h4 data-section="Curriculum" data-value="Practicante-de-Calidad">Practicante de Calidad</h4>
+                        <span class="casa" data-section="Curriculum" data-value="Grupo-Repremundo">Grupo Repremundo</span>
+                        <span class="fecha" data-section="Curriculum" data-value="Fecha-Trabajo1">Agosto 01, 2017 - Enero 31, 2018</span>
+                        <p data-section="Curriculum" data-value="Descripcion-Repre">Apoyé en la implementación y mantenimiento de sistemas de gestión de calidad, asegurando el cumplimiento de normativas y estándares industriales, siendo mis practicas profesionales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4 data-section="Curriculum" data-value="Asistente-de-Calidad">Asistente de Calidad </h4>
+                        <span class="casa">Tipiel S.A</span>
+                        <span class="fecha" data-section="Curriculum" data-value="Fecha-Trabajo2">Junio 01, 2018 - Julio 02, 2019</span>
+                        <p data-section="Curriculum" data-value="Descripcion-Tipiel">Asistente de calidad en empresa de ingeniería de petróleo, apoyando en la implementación de sistemas de gestión de calidad, supervisión de procesos y elaboración de informes de auditoría. Colaboré en la mejora continua y capacitación del personal en prácticas de calidad.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4 data-section="Curriculum" data-value="Receiving">Coordinador de Receiving</h4>
+                        <span class="casa">Capacity</span>
+                        <span class="fecha" data-section="Curriculum" data-value="Fecha-Trabajo3">Agosto 01, 2021 - Agosto 02, 2022</span>
+                        <p data-section="Curriculum" data-value="Descripcion-Capacity">Responsable de recepción y verificación de mercancías, manejo de inventarios y control de calidad. Coordinación con proveedores y personal de almacén para asegurar un flujo eficiente de productos. Experiencia en sistemas de gestión de inventario y elaboración de informes de recepción.</p>
+                        <div class="conectord">
+                            <div class="circulod">
+                        </div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4 data-section="Curriculum" data-value="Inspector-QC">Inspector de Calidad</h4>
+                    <span class="casa">Cosmax</span>
+                    <span class="fecha" data-section="Curriculum" data-value="Fecha-Trabajo4">Septiembre 01, 2023 - Actualmente</span>
+                    <p data-section="Curriculum" data-value="Descripcion-Cosmax">En mi rol actual, creo y mantengo registros de calidad, gestiono informes de No Conformidad y propongo acciones correctivas para asegurar el cumplimiento de normativas y mejorar procesos.</p>
+                    <div class="conectord">
+                        <div class="circulod">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+<!--TECHNOLOGIES SECTION-->
+<section id="tecnologias" class="tecnologias">
+    <div class="section-container">
+        <h2 data-section="Technologies" data-value="Tecnologias">Tecnologias</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3 data-section="Technologies" data-value="Desarrollo">DESARROLLO</h3>
+                <div class="technology-container">
+                    <div class="technology">
+                        <img src="img/html.png" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+                    <div class="technology">
+                        <img src="img/CSS.png" alt="CSS">
+                        <p>CSS</p>
+                    </div>
+                    <div class="technology">
+                        <img src="img/Javascript.png" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="technology">
+                        <img src="img/python.png" alt="Python">
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col derecha">
+                <h3>EXCEL BUNDLE</h3>
+                <div class="technology-container">
+                    <div class="technology">
+                        <img src="img/Excel.png" alt="Excel">
+                        <p data-section="Technologies" data-value="Excel">Excel Avanzado</p>
+                    </div>
+                    <div class="technology">
+                        <img src="img/xls.png" alt="VBA">
+                        <p>Excel VBA</p>
+                    </div>
+                    <div class="technology">
+                        <img src="img/powerquery.png" alt="Power Query"> 
+                        <p>Power Query</p>
+                    </div>
+                    <div class="technology">
+                        <img src="img/powerpivot.png" alt="Power Pivot">
+                        <p>Power Pivot</p>
+                    </div>
+                    <div class="technology">
+                        <img src="img/PowerBI.png" alt="PowerBI">
+                        <p>PowerBI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--CONTACT SECTION-->
+    <section id="contacto" class="contacto">
+        <div class="section-container">
+            <h2 data-section="Contact" data-value="Contacto">CONTACTO</h2>
+            <div class="fila">
+                <!--FORM-->
+                <div class="col">
+                    <form action="https://formsubmit.co/luismiguel.pinedadev@gmail.com " method="POST">
+                        <div data-section="Contact" data-value="Tu-nombre">
+                            <input type="text" name="name" placeholder="Tú nombre">
+                        </div>
+                        <div data-section="Contact" data-value="Telefono">
+                            <input type="text" name="phone" placeholder="Numero Telefónico">
+                        </div>
+                        <div data-section="Contact" data-value="Dirección-de-correo">
+                            <input type="text" name="email" placeholder="Dirección de correo">
+                        </div>
+                        <div data-section="Contact" data-value="Tema">
+                            <input type="text" name="topic" placeholder="Tema">
+                        </div>
+                        <div data-section="Contact" data-value="Mensaje">
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        </div>
+                        <button>
+                            <span data-section="Contact" data-value="Enviar-Mensaje">Mensaje</span><i class ="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                    </button> 
+                </form>
+                </div>
+                <!--MAP-->
+                <div class="col">
+                    <img src="img/ubicación.png" alt="Middlesex">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                New Jersey, Metuchen
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile" ></i>
+                                <span data-section="Contact" data-value="Llamanos"> Llamanos +1 (954) 860-9233</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                luismiguel.pinedadev@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--FOOTER-->
+    <footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://github.com/MrTesla23" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/luis-dev-892a61330/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
